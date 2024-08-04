@@ -18,7 +18,7 @@ void setup() {
   enc.replace("\n", "");  // delete last "\n"
   char** wavData = audio->wavData;
   for (int j = 0; j < audio->wavDataSize / audio->dividedWavDataSize; ++j) {
-    enc = base64::encode((byte*)wavData[j], audio->dividedWavDataSize);
+    enc += base64::encode((byte*)wavData[j], audio->dividedWavDataSize);
     enc.replace("\n", "");// delete last "\n"
   }
   Serial.println("Data: ");
