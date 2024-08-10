@@ -1,7 +1,7 @@
 #include "I2S_Mic.h"
 #define SAMPLE_RATE (16000)
 #define PIN_I2S_BCLK 14
-#define PIN_I2S_LRC 22
+#define PIN_I2S_LRC 23
 #define PIN_I2S_DIN 34
 
 // This I2S specification : 
